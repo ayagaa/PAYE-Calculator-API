@@ -15,7 +15,7 @@ namespace PAYE.API.Utils
             {
                 using (var reader = new StreamReader(Request, Encoding.UTF8))
                 {
-                    return reader.ReadToEnd();
+                    return reader.ReadToEndAsync().GetAwaiter().GetResult();
                 }
             }
             return string.Empty;

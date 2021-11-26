@@ -12,7 +12,7 @@ namespace PAYE.API.Models
     {
         [FirestoreProperty]
         [JsonProperty(PropertyName = "phoneNumber")]
-        public double PhoneNumber { get; set; }
+        public string PhoneNumber { get; set; }
         [FirestoreProperty]
         [JsonProperty(PropertyName = "grossPay")]
         public double GrossPay { get; set; }

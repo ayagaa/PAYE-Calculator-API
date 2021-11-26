@@ -19,6 +19,7 @@ namespace PAYE.API.Controllers
 
         }
 
+        [HttpPost]
         public async Task<ActionResult<PayDetails>> CalculateAsync()
         {
             string payDetailsString = Http.GetRequestBody(Request.Body);

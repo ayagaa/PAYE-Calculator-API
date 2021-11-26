@@ -1,1 +1,15 @@
 Credentials/
+
+bin/
+
+obj/
+
+bin/**/*.so
+
+bin/**/*.*
+
+obj/**/*.*
+
+bin/Debug/net5.0/runtimes/linux-x64/native/libgrpc_csharp_ext.x64.so
+
+

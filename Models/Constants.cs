@@ -7,8 +7,8 @@ namespace PAYE.API.Models
 {
     public static class Constants
     {
-        public static readonly float MINIMUM_TAXABLE_AMOUNT = 0;
-        public static readonly float PERSONAL_RELIEF_AMOUNT = 0;
+        public static readonly float MINIMUM_TAXABLE_AMOUNT = 12298;
+        public static readonly float PERSONAL_RELIEF_AMOUNT = 1408;
         public static readonly List<TaxRange> PAYETaxRanges = new List<TaxRange>()
         {
             new TaxRange(){RangeId = 0, StartRange = 0, EndRange = 12298, TaxRate = 10, RateType = RateType.Percent },

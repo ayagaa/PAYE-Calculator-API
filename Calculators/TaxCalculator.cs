@@ -20,7 +20,7 @@ namespace PAYE.API.Calculators
             var PAYECalculator = new PAYECalculator();
             var taxBeforeRelief = PAYECalculator.Calculate(taxableIncome);
 
-            var PAYEAmount = taxBeforeRelief - Constants.PERSONAL_RELIEF_AMOUNT;
+            var PAYEAmount = taxBeforeRelief > 0? taxBeforeRelief - Constants.PERSONAL_RELIEF_AMOUNT: 0;
 
             var NHIFCalculator = new NHIFCalculator();
             var NHIFAmount = NHIFCalculator.Calculate(taxableIncome);
@@ -34,7 +34,7 @@ namespace PAYE.API.Calculators
                 NHIF = NHIFAmount,
                 NSSF = NSSFAmount,
                 NetPay = netPay,
-                PersonalRelief = Constants.PERSONAL_RELIEF_AMOUNT,
+                PersonalRelief = taxBeforeRelief > 0? Constants.PERSONAL_RELIEF_AMOUNT : 0,
                 TaxBeforeRelief = taxBeforeRelief,
                 GrossPay = payDetails.GrossPay,
                 PayMonth = payDetails.PayMonth,

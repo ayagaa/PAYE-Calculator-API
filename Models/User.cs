@@ -1,5 +1,6 @@
 ﻿using Google.Cloud.Firestore;
 using Newtonsoft.Json;
+using PAYE.API.DataAccess;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -23,12 +24,17 @@ namespace PAYE.API.Models
 
         public async Task<User> GetUserAsync()
         {
+            await Task.Delay(0);
             return new User();
         }
 
         public async Task<bool> SaveAsync()
         {
-            return false;
+            await Task.Delay(0);
+            var userRepo = new UserRespository();
+            var user = userRepo.Add(this);
+
+            return user != null;
         }
     }
 }

@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using PAYE.API.DataAccess;
 using PAYE.API.Models;
 using PAYE.API.Utils;
 using System;
@@ -18,11 +19,31 @@ namespace PAYE.API.Controllers
 
         }
 
-        [HttpGet()]
-        public async Task<ActionResult<User>> GetUserAsync([FromQuery]
-                                                    string PhoneNumber)
+        [HttpGet("getuser/{PhoneNumber}")]
+        public async Task<ActionResult<User>> GetUserAsync(string PhoneNumber)
         {
-            return Ok(default(User));
+            await Task.Delay(0);
+            var userRepo = new UserRespository();
+
+            var users = userRepo.GetAll();
+            var user = users.First(u => u.PhoneNumber.ToLower() == PhoneNumber);
+            if (user != null)
+                return Ok(user);
+
+            return NotFound();
+        }
+
+        [HttpGet("getusers")]
+        public async Task<ActionResult<List<User>>> GetAllUsersAsync()
+        {
+            await Task.Delay(0);
+            var userRepo = new UserRespository();
+
+            var users = userRepo.GetAll();
+            if (users?.Count > 0)
+                return Ok(users);
+
+            return NotFound();
         }
 
 
