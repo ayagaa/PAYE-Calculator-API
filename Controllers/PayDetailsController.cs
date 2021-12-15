@@ -14,10 +14,6 @@ namespace PAYE.API.Controllers
     [ApiController]
     public class PayDetailsController : ControllerBase
     {
-        public PayDetailsController()
-        {
-
-        }
 
         [HttpGet("getPaySlip/{PhoneNumber}/{PayMonth}/{PayYear}")]
         public async Task<ActionResult<PayDetails>> GetPayDetailsAsync(string PhoneNumber, string PayMonth, int PayYear)
@@ -48,7 +44,7 @@ namespace PAYE.API.Controllers
         }
 
         [HttpPost("save")]
-        public async Task<ActionResult<PayDetails>> SavePayDetails()
+        public async Task<ActionResult<PayDetails>> SavePayDetailsAsync()
         {
             await Task.Delay(0);
             string payDetailsString = Http.GetRequestBody(Request.Body);

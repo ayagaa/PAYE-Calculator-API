@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="PAYE.API.Controllers.CalculatorController">
+    <Position X="1.75" Y="0.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Controllers\CalculatorController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PAYE.API.Controllers.PayDetailsController">
+    <Position X="7.25" Y="0.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAgAA=</HashCode>
+      <FileName>Controllers\PayDetailsController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PAYE.API.Controllers.UsersController">
+    <Position X="4.5" Y="0.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAQAAAAA=</HashCode>
+      <FileName>Controllers\UsersController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

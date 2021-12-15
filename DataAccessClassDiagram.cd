@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="PAYE.API.DataAccess.BaseRepository">
+    <Position X="3" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAYAAAAAAAAAAQBAAAAAAAACAAEAAAAAAgAAAAAAAEA=</HashCode>
+      <FileName>DataAccess\BaseRepository.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PAYE.API.DataAccess.PayDetailsRepository">
+    <Position X="7" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAYAAAAAAAAAABBAAAAAAAAAkAEAAAAAAiAAAAAAAMA=</HashCode>
+      <FileName>DataAccess\PayDetailsRepository.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="PAYE.API.DataAccess.UserRespository">
+    <Position X="5.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAYAAAAAAAAAAABAAAAAAAAAAAEAAAAAAiAAAAAAAMA=</HashCode>
+      <FileName>DataAccess\UserRespository.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="PAYE.API.Models.User">
+    <Position X="1.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAQAAIAAAAAAAAAAAQAAAAA=</HashCode>
+      <FileName>Models\User.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PAYE.API.Models.TaxRange">
+    <Position X="8.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAAACAAAAAAAAAAAAACAAAAAIAAAEAAAA=</HashCode>
+      <FileName>Models\TaxRange.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PAYE.API.Models.PayDetails">
+    <Position X="3.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAQABgAAAgAAQAAQABAAAAAAAAgAAAAgEAAAAA=</HashCode>
+      <FileName>Models\PayDetails.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PAYE.API.Models.DbBase">
+    <Position X="2.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\DbBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PAYE.API.Models.Constants">
+    <Position X="5.5" Y="0.5" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAIBAgAAIACAACQAAggAAAAgAAAQAAAAAAAgAQAgEA=</HashCode>
+      <FileName>Models\Constants.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="PAYE.API.Models.IFirestore&lt;T&gt;">
+    <Position X="8.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAYAAAAAAAAAAABAAAAAAAAAAAEAAAAAAgAAAAAAAIA=</HashCode>
+      <FileName>Models\IFirestore.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="PAYE.API.Models.RateType">
+    <Position X="5.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgCAAAAAA=</HashCode>
+      <FileName>Models\TaxRange.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -14,11 +14,6 @@ namespace PAYE.API.Controllers
     [ApiController]
     public class CalculatorController : ControllerBase
     {
-        public CalculatorController()
-        {
-
-        }
-
         [HttpPost]
         public async Task<ActionResult<PayDetails>> CalculateAsync()
         {

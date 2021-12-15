@@ -14,11 +14,6 @@ namespace PAYE.API.Controllers
     [ApiController]
     public class UsersController : ControllerBase
     {
-        public UsersController()
-        {
-
-        }
-
         [HttpGet("getuser/{PhoneNumber}")]
         public async Task<ActionResult<User>> GetUserAsync(string PhoneNumber)
         {
